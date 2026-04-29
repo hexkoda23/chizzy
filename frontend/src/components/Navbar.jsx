@@ -6,9 +6,6 @@ const navLinks = [
   { label: 'Skills', path: '/skills' },
   { label: 'Case Studies', path: '/case-studies' },
   { label: 'Supporting Case Study', path: '/tools#supporting-case-study' },
-  { label: 'Content Samples', path: '/content-samples' },
-  { label: 'Campaign Ideas', path: '/campaign-ideas' },
-  { label: 'Analytics Insights', path: '/analytics-insights' },
   { label: 'Tools', path: '/tools' },
 ];
 

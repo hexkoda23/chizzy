@@ -5,9 +5,6 @@ import Home from './pages/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import CaseStudies from './components/CaseStudies';
-import ContentSamples from './components/ContentSamples';
-import CampaignIdeas from './components/CampaignIdeas';
-import AnalyticsInsights from './components/AnalyticsInsights';
 import Tools from './components/Tools';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -79,9 +76,6 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/case-studies" element={<CaseStudies />} />
-          <Route path="/content-samples" element={<ContentSamples />} />
-          <Route path="/campaign-ideas" element={<CampaignIdeas />} />
-          <Route path="/analytics-insights" element={<AnalyticsInsights />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

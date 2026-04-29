@@ -15,16 +15,10 @@ const highlights = [
     icon: '💼',
   },
   {
-    title: 'Content Samples',
-    description: 'A look at the writing, strategy, and storytelling behind the work.',
-    path: '/content-samples',
-    icon: '✍️',
-  },
-  {
-    title: 'Analytics & Insights',
-    description: 'Data-informed content decisions and monthly performance reports.',
-    path: '/analytics-insights',
-    icon: '📈',
+    title: 'Supporting Case Study',
+    description: 'Operations & Communication Coordination in institutional and client projects.',
+    path: '/tools#supporting-case-study',
+    icon: '📊',
   },
 ];
 
@@ -41,7 +35,7 @@ export default function Home() {
             <div className="w-16 h-1 bg-teal-600 rounded-full mx-auto" />
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {highlights.map((item, i) => (
               <Link 
                 to={item.path} 
