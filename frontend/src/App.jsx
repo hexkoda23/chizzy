@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import CaseStudies from './components/CaseStudies';
+import SupportingCaseStudy from './components/SupportingCaseStudy';
 import Tools from './components/Tools';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -76,6 +77,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/case-studies" element={<CaseStudies />} />
+          <Route path="/supporting-case-study" element={<SupportingCaseStudy />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

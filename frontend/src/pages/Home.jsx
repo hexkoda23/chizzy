@@ -17,7 +17,7 @@ const highlights = [
   {
     title: 'Supporting Case Study',
     description: 'Operations & Communication Coordination in institutional and client projects.',
-    path: '/tools#supporting-case-study',
+    path: '/supporting-case-study',
     icon: '📊',
   },
 ];
