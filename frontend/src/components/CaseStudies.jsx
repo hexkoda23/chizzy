@@ -108,6 +108,10 @@ const caseStudies = [
       label: 'View Project',
       url: 'https://docs.google.com/document/d/1XDYa1t_9QARGW3iwV591NOnQNUIbLUue/edit?usp=drivesdk&ouid=114589323661130766226&rtpof=true&sd=true',
     },
+    additionalLink2: {
+      label: 'Writing samples',
+      url: 'https://docs.google.com/document/d/1w4zgQt5fVbr0hDDb4OEsG4a9IiDg_yItTXigagdVRhc/edit?usp=drivesdk',
+    },
   },
 ];
 
@@ -246,6 +250,19 @@ export default function CaseStudies() {
                         className="inline-flex items-center gap-2 text-teal-600 font-medium hover:text-teal-700 transition-colors"
                       >
                         {activeCase.additionalLink.label}
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                      </a>
+                    )}
+                    {activeCase.additionalLink2 && (
+                      <a
+                        href={activeCase.additionalLink2.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-teal-600 font-medium hover:text-teal-700 transition-colors"
+                      >
+                        {activeCase.additionalLink2.label}
                         <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
