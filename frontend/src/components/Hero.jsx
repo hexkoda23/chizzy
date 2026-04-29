@@ -59,7 +59,9 @@ export default function Hero() {
                 </svg>
               </Link>
               <a
-                href="#"
+                href="/cv/CHIZITEREM _CHIBUOKEM_CV1_2026.doc.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 id="hero-download-cv"
                 className="btn-outline flex items-center justify-center gap-2"
               >
