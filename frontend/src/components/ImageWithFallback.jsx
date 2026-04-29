@@ -32,7 +32,7 @@ export function ImageWithFallback({ src, alt, className = '', style = {}, fallba
 }
 
 // Standalone circle fallback wrapper (for Hero)
-export function CirclePhoto({ src, alt, sizeClass = 'w-72 h-72', className = '' }) {
+export function CirclePhoto({ src, alt, sizeClass = 'w-72 h-72', className = '', imgClassName = '' }) {
   const handleError = (e) => {
     const container = e.target.parentNode;
     e.target.style.display = 'none';
@@ -53,7 +53,7 @@ export function CirclePhoto({ src, alt, sizeClass = 'w-72 h-72', className = '' 
       <img
         src={src}
         alt={alt}
-        className="w-full h-full object-cover"
+        className={`w-full h-full object-cover ${imgClassName}`}
         onError={handleError}
       />
     </div>

@@ -74,17 +74,30 @@ export default function SupportingCaseStudy() {
               </div>
 
               {/* Link to screenshots */}
-              <a
-                href="/4case/8d732395-2f3e-4797-86b5-3270d51a33fc.jpeg"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-teal-400 font-medium hover:text-teal-300 transition-colors mt-4"
-              >
-                View Project Screenshots
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                </svg>
-              </a>
+              <div className="flex flex-wrap gap-4 mt-6">
+                <a
+                  href="/4case/8d732395-2f3e-4797-86b5-3270d51a33fc.jpeg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-teal-400 font-medium hover:text-teal-300 transition-colors"
+                >
+                  View Screenshot 1
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+                <a
+                  href="/4case/91a8ea59-2e16-4e68-9d2a-8e3e486817f8.jpeg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-teal-400 font-medium hover:text-teal-300 transition-colors"
+                >
+                  View Screenshot 2
+                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>

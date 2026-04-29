@@ -89,6 +89,7 @@ export default function Hero() {
                 src="/my-pics/photo1.jpg"
                 alt="Chiziterem Chibuokem profile photo"
                 sizeClass="w-56 h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80"
+                imgClassName="brightness-110 contrast-[1.02]"
               />
 
               {/* Open to Work badge */}
