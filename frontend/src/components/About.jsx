@@ -2,7 +2,7 @@ import { RectPhoto } from './ImageWithFallback';
 
 const stats = [
   { value: '3+', label: 'Years Experience', icon: '🏆' },
-  { value: '4', label: 'Industries Served', icon: '🌐' },
+  { value: '50+', label: 'Projects Delivered', icon: '📊' },
   { value: '✓', label: 'Remote-First Ready', icon: '💻' },
   { value: 'B.Sc.', label: 'Industrial Physics', icon: '🎓' },
 ];
@@ -17,10 +17,10 @@ export default function About() {
           <div className="w-full md:w-auto md:flex-shrink-0 flex flex-col items-center md:items-start animate-on-scroll">
             <RectPhoto
               src="/my-pics/photo2.jpg"
-              alt="Chiziterem Chibuokem professional photo"
+              alt="Zizi professional photo"
             />
             <p className="mt-4 text-xs text-gray-500 italic text-center md:text-left max-w-sm">
-              Chiziterem Chibuokem — Communications &amp; Operations Professional
+              Zizi — Content & Communication Strategist
             </p>
           </div>
 
@@ -35,17 +35,26 @@ export default function About() {
             <div className="teal-accent-bar" />
 
             <div className="space-y-4 text-gray-600 leading-relaxed text-[17px]">
-              <p>
-                I'm a multidisciplinary professional holding a <strong className="text-[#0F172A]">B.Sc. in Industrial Physics</strong> from Enugu State University of Science &amp; Technology (ESUT), 2024 — a foundation that sharpens my systems thinking and analytical approach to every communication challenge.
+              <p className="text-xl font-semibold text-[#0F172A]">
+                Zizi
+              </p>
+              <p className="text-lg text-teal-600 font-medium">
+                Content & Communication Strategist
               </p>
               <p>
-                My experience spans <strong className="text-[#0F172A]">digital communications, administrative support, content strategy, and social media operations</strong>, across remote, hybrid, and institutional settings — from tech startups like Webxiel Technology and Solution Labs to a federal government agency, the Nigeria Shippers' Council.
+                I’m a graduate of <strong className="text-[#0F172A]">Industrial Physics</strong> with a strong foundation in structured thinking, problem-solving, and analysis.
               </p>
               <p>
-                I'm passionate about <strong className="text-[#0F172A]">translating complex, technical information</strong> into clear, compelling, audience-appropriate content. Whether it's crafting a brand script, streamlining a workflow, or managing stakeholder communication, I bring the same detail-oriented, collaborative energy.
+                Over time, I’ve transitioned these skills into content and communication, where I focus on making ideas clear, engaging, and easy to understand.
               </p>
               <p>
-                Currently based in <strong className="text-[#0F172A]">Lagos, Nigeria</strong>, and open to remote and global opportunities across communications, operations, and content roles.
+                I’ve worked across <strong className="text-[#0F172A]">content planning, social media strategy, and customer communication</strong>, where I’ve learned how to organize workflows, break down complex information, and present it in ways that connect with people. My approach is simple: clarity first, then impact.
+              </p>
+              <p>
+                I write across different styles and formats, from storytelling to structured content, always with a focus on meaning, relatability, and precision. I’m particularly interested in creating content that doesn’t just inform, but makes people pause, think, and feel.
+              </p>
+              <p>
+                Right now, I’m focused on building depth in <strong className="text-[#0F172A]">content strategy and communication</strong>, refining how ideas are shaped, structured, and delivered for real impact.
               </p>
             </div>
 

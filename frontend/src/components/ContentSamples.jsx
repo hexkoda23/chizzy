@@ -5,7 +5,7 @@ const contentSamples = [
     title: 'Brand Awareness Campaign Script',
     description:
       'A structured campaign script developed to drive audience awareness and engagement for a client brand. Demonstrates scripting, narrative flow, and audience-first communication.',
-    link: 'https://docs.google.com/document/d/1cNEYAgXIDMyJ6F2gexNaOp34-x673pv1Eakv_5cph2Y/edit?usp=drivesdk',
+    link: 'https://docs.google.com/document/d/1rBGX7u7qJycJVFKn_I-rWxIUZJUvfuAebssO0-AWmsM/edit?usp=drivesdk',
     accentFrom: 'from-teal-500',
     accentTo: 'to-teal-600',
   },
@@ -15,7 +15,7 @@ const contentSamples = [
     title: 'Sample Content Calendar — Consumer Brand',
     description:
       'A structured monthly content plan showcasing content strategy, scheduling logic, and platform-specific thinking for a consumer-facing brand.',
-    link: 'https://docs.google.com/document/d/1JDGJDYzl4UQBzzNWlq8HjVU3V-mqdneOtY0fnMusAnM/edit?usp=drivesdk',
+    link: 'https://docs.google.com/document/d/1qHhe3ManKNpSNU4-fo6eUY5pKZCC0iypx6wn9WzTfQk/edit?usp=drivesdk',
     accentFrom: 'from-blue-500',
     accentTo: 'to-blue-600',
   },
@@ -25,7 +25,7 @@ const contentSamples = [
     title: 'Storytelling & Narrative Samples',
     description:
       'Written content pieces showcasing creative and editorial storytelling — designed to connect with audiences and communicate brand values clearly.',
-    link: 'https://docs.google.com/document/d/1ydSWfVmZG6SbNOh7r10kGzzXH73WHi1yYw8PJa-0Fvk/edit?usp=drivesdk',
+    link: 'https://docs.google.com/document/d/1JDGJDYzl4UQBzzNWlq8HjVU3V-mqdneOtY0fnMusAnM/edit?usp=drivesdk',
     accentFrom: 'from-purple-500',
     accentTo: 'to-purple-600',
   },
@@ -35,7 +35,7 @@ const contentSamples = [
     title: 'Additional Story Sample',
     description:
       'Another written sample demonstrating range, voice, and the ability to adapt tone and structure to different content goals.',
-    link: 'https://docs.google.com/document/d/1XDYa1t_9QARGW3iwV591NOnQNUIbLUue/edit?usp=drivesdk',
+    link: 'https://docs.google.com/document/d/1XDYa1t_9QARGW3iwV591NOnQNUIbLUue/edit?usp=drivesdk&ouid=114589323661130766226&rtpof=true&sd=true',
     accentFrom: 'from-rose-500',
     accentTo: 'to-rose-600',
   },
@@ -45,7 +45,7 @@ const contentSamples = [
     title: 'Monthly Insight Review',
     description:
       'A client-facing monthly insight report summarising content performance, engagement trends, and strategic recommendations.',
-    link: 'https://docs.google.com/document/d/1PNnDMwYLR2TfsLBWkhCxSDcxQWUP8p21/edit?usp=drivesdk',
+    link: 'https://docs.google.com/document/d/1PNnDMwYLR2TfsLBWkhCxSDcxQWUP8p21/edit?usp=drivesdk&ouid=114589323661130766226&rtpof=true&sd=true',
     accentFrom: 'from-orange-500',
     accentTo: 'to-orange-600',
   },
