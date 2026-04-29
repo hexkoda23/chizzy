@@ -45,7 +45,7 @@ const contentSamples = [
     title: 'Monthly Insight Review',
     description:
       'A client-facing monthly insight report summarising content performance, engagement trends, and strategic recommendations.',
-    link: 'https://docs.google.com/document/d/1PNnDMwYLR2TfsLBWkhCxSDcxQWUP8p21/edit?usp=drivesdk&ouid=114589323661130766226&rtpof=true&sd=true',
+    link: 'https://docs.google.com/document/d/1q3ckGGcbOjtYnLDLGh-lEnfgP95k33rMtI-IJ8E_xo4/edit?usp=drivesdk',
     accentFrom: 'from-orange-500',
     accentTo: 'to-orange-600',
   },

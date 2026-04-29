@@ -80,7 +80,7 @@ export default function AnalyticsInsights() {
             </p>
           </div>
           <a
-            href="https://docs.google.com/document/d/1PNnDMwYLR2TfsLBWkhCxSDcxQWUP8p21/edit?usp=drivesdk"
+            href="https://docs.google.com/document/d/1q3ckGGcbOjtYnLDLGh-lEnfgP95k33rMtI-IJ8E_xo4/edit?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-500 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 shadow-lg shadow-teal-600/25 whitespace-nowrap"
