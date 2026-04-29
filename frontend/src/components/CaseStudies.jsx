@@ -61,6 +61,7 @@ const caseStudies = [
     ],
     outcome: 'The project provided a clear roadmap for content creation, improving consistency, brand voice, and overall communication effectiveness.',
     keyInsight: 'Strong content is not created randomly,it is built on clear strategy, structure, and intention.',
+    link: 'https://docs.google.com/document/d/1PS6QjjDUZktP6Q0-UT8TMcXaeVB6ObPKdYzUbgwrCcw/edit?usp=drivesdk',
   },
   {
     title: 'Campaign Concept Development and Script Writing',
