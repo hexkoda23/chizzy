@@ -1,14 +1,17 @@
-import { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
+import { Suspense, lazy, useEffect } from 'react';
+import { Navigate, Outlet, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import About from './components/About';
 import Skills from './components/Skills';
 import CaseStudies from './components/CaseStudies';
+import CaseStudyDetail from './components/CaseStudyDetail';
 import SupportingCaseStudy from './components/SupportingCaseStudy';
 import Tools from './components/Tools';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+
+const Admin = lazy(() => import('./admin/Admin'));
 
 // Scroll to top on route change
 function ScrollToTop() {
@@ -16,7 +19,7 @@ function ScrollToTop() {
 
   useEffect(() => {
     if (!hash) {
-      window.scrollTo(0, 0);
+      window.scrollTo({ top: 0, behavior: 'instant' });
     } else {
       const id = hash.substring(1);
       const element = document.getElementById(id);
@@ -29,7 +32,7 @@ function ScrollToTop() {
   return null;
 }
 
-function App() {
+function SiteLayout() {
   // Intersection Observer for scroll animations
   useEffect(() => {
     // Need a MutationObserver or a way to re-attach when DOM changes,
@@ -71,19 +74,37 @@ function App() {
     <div className="min-h-screen flex flex-col">
       <ScrollToTop />
       <Navbar />
-      <main className="flex-1 pt-20"> {/* Added pt-20 to account for fixed navbar on new pages */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/case-studies" element={<CaseStudies />} />
-          <Route path="/supporting-case-study" element={<SupportingCaseStudy />} />
-          <Route path="/tools" element={<Tools />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      <main className="flex-1">
+        <Outlet />
       </main>
       <Footer />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route
+        path="/admin/*"
+        element={
+          <Suspense fallback={<div className="min-h-screen bg-paper" />}>
+            <Admin />
+          </Suspense>
+        }
+      />
+      <Route element={<SiteLayout />}>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/case-studies" element={<CaseStudies />} />
+        <Route path="/case-studies/:id" element={<CaseStudyDetail />} />
+        <Route path="/supporting-case-study" element={<SupportingCaseStudy />} />
+        <Route path="/tools" element={<Tools />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Route>
+    </Routes>
   );
 }
 

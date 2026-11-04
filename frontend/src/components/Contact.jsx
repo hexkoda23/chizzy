@@ -1,36 +1,19 @@
 import { useState } from 'react';
+import content from '../data/content.json';
+import { ArrowRight, ArrowUpRight } from './ui';
+
+const { contact, profile } = content;
 
 const contactDetails = [
-  {
-    icon: '📧',
-    label: 'Email',
-    value: 'ihuomachibuokem@gmail.com',
-    href: 'mailto:ihuomachibuokem@gmail.com',
-    id: 'contact-email',
-  },
-  {
-    icon: '📞',
-    label: 'Phone',
-    value: '+234 9067948713',
-    href: 'tel:+2349067948713',
-    id: 'contact-phone',
-  },
-  {
-    icon: '🔗',
-    label: 'LinkedIn',
-    value: 'chibuokem-chizterem',
-    href: 'https://www.linkedin.com/in/chibuokem-chizterem',
-    id: 'contact-linkedin',
-    external: true,
-  },
-  {
-    icon: '📍',
-    label: 'Location',
-    value: 'Lagos, Nigeria',
-    href: null,
-    id: 'contact-location',
-  },
+  { label: 'Email', value: contact.email, href: `mailto:${contact.email}`, id: 'contact-email' },
+  { label: 'Phone', value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, '')}`, id: 'contact-phone' },
+  { label: 'LinkedIn', value: contact.linkedinLabel, href: contact.linkedinUrl, id: 'contact-linkedin', external: true },
+  { label: 'Location', value: profile.location, href: null, id: 'contact-location' },
 ];
+
+const fieldClass =
+  'w-full bg-transparent border-b border-paper/25 py-3 text-paper placeholder-paper/40 focus:outline-none focus:border-clay-light transition-colors';
+const labelClass = 'block text-xs font-semibold uppercase tracking-[0.14em] text-paper/60 mb-1';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -45,186 +28,102 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
+  // The site has no mail server, so this hands the message to the visitor's email app.
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Placeholder — non-functional as requested
+    const body = `${formData.message}\n\n${formData.name}\n${formData.email}`;
+    window.location.href = `mailto:${contact.email}?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(body)}`;
     setSubmitted(true);
-    setTimeout(() => setSubmitted(false), 4000);
-    setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
   return (
-    <section id="contact" className="py-24 bg-[#0F172A] relative overflow-hidden">
-      {/* Background decorations */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-20 -left-20 w-80 h-80 bg-teal-600/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-20 -right-20 w-80 h-80 bg-teal-600/10 rounded-full blur-3xl" />
-      </div>
-
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-16 animate-on-scroll">
-          <div className="inline-flex items-center gap-2 text-teal-400 text-xs font-bold uppercase tracking-widest mb-4">
-            <span className="w-6 h-px bg-teal-400" />
-            Get In Touch
-            <span className="w-6 h-px bg-teal-400" />
-          </div>
-          <h2 className="section-heading text-white mb-3">Let's Work Together</h2>
-          <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            Open to content, communications, and operations roles — remote or Lagos-based.
-          </p>
-          <div className="w-16 h-1 bg-teal-600 rounded-full mx-auto mt-4" />
+    <section id="contact" className="bg-ink text-paper">
+      <div className="page-width pt-16 sm:pt-24 pb-20 sm:pb-28">
+        <div className="animate-on-scroll mb-14 sm:mb-20">
+          <p className="eyebrow-on-dark mb-5">{contact.eyebrow}</p>
+          <h1 className="display-heading">{contact.heading}</h1>
+          <p className="mt-6 text-lg sm:text-xl text-paper/70 max-w-2xl">{contact.subheading}</p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-14 lg:gap-20 items-start">
           {/* LEFT: Contact details */}
-          <div className="animate-on-scroll space-y-6">
-            <h3 className="text-white font-bold text-2xl mb-6">Reach Out Directly</h3>
+          <div className="animate-on-scroll border-b border-paper/10">
+            {contactDetails.map((detail) => {
+              const row = (
+                <>
+                  <span className="min-w-0">
+                    <span className="block text-xs font-semibold uppercase tracking-[0.14em] text-paper/60 mb-1.5">{detail.label}</span>
+                    <span className="block font-display font-light text-xl sm:text-2xl break-words">{detail.value}</span>
+                  </span>
+                  {detail.href && <ArrowUpRight className="w-5 h-5 flex-shrink-0 text-paper/50 transition-colors group-hover:text-clay-light" />}
+                </>
+              );
+              const rowClass = 'group flex items-center justify-between gap-4 py-6 border-t border-paper/10';
 
-            <div className="space-y-4">
-              {contactDetails.map((detail) => {
-                const content = (
-                  <div
-                    key={detail.id}
-                    id={detail.id}
-                    className={`navy-card rounded-2xl p-5 flex items-center gap-4 transition-all duration-200 ${detail.href ? 'hover:border-teal-600/50 hover:-translate-y-0.5 cursor-pointer' : ''}`}
-                  >
-                    <div className="w-12 h-12 bg-teal-600/20 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">
-                      {detail.icon}
-                    </div>
-                    <div>
-                      <p className="text-gray-400 text-xs font-bold uppercase tracking-widest mb-1">{detail.label}</p>
-                      <p className="text-white font-medium">{detail.value}</p>
-                    </div>
-                    {detail.href && (
-                      <div className="ml-auto text-teal-400 opacity-60">
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    )}
+              if (!detail.href) {
+                return (
+                  <div key={detail.id} id={detail.id} className={rowClass}>
+                    {row}
                   </div>
                 );
+              }
 
-                if (!detail.href) return content;
-
-                return (
-                  <a
-                    key={detail.id}
-                    href={detail.href}
-                    target={detail.external ? '_blank' : undefined}
-                    rel={detail.external ? 'noopener noreferrer' : undefined}
-                  >
-                    {content}
-                  </a>
-                );
-              })}
-            </div>
-
-            {/* LinkedIn CTA */}
-            <div className="pt-4">
-              <p className="text-gray-400 text-sm mb-3">Prefer a quick chat?</p>
-              <a
-                href="https://www.linkedin.com/in/chibuokem-chizterem"
-                target="_blank"
-                rel="noopener noreferrer"
-                id="contact-linkedin-cta"
-                className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 font-semibold transition-colors"
-              >
-                Reach out on LinkedIn →
-              </a>
-            </div>
+              return (
+                <a
+                  key={detail.id}
+                  id={detail.id}
+                  href={detail.href}
+                  target={detail.external ? '_blank' : undefined}
+                  rel={detail.external ? 'noopener noreferrer' : undefined}
+                  className={`${rowClass} hover:text-clay-light transition-colors`}
+                >
+                  {row}
+                </a>
+              );
+            })}
           </div>
 
           {/* RIGHT: Contact form */}
-          <div className="animate-on-scroll animate-on-scroll-delay-2">
-            <div className="navy-card rounded-2xl p-8">
-              <h3 className="text-white font-bold text-xl mb-6">Send a Message</h3>
+          <div className="animate-on-scroll animate-on-scroll-delay-2 bg-ink-raised rounded-2xl p-7 sm:p-10">
+            <h2 className="font-display font-light text-3xl mb-8">Send a Message</h2>
 
-              {submitted && (
-                <div className="mb-6 bg-teal-600/20 border border-teal-600/40 text-teal-400 rounded-xl p-4 text-sm font-medium">
-                  ✓ Message sent! I'll get back to you soon.
-                </div>
-              )}
+            {submitted && (
+              <p className="mb-8 rounded-xl border border-clay-light/40 p-4 text-sm leading-relaxed text-paper/85" role="status">
+                Your email app should now be open with this message ready to send. If it didn't open, write directly to{' '}
+                <a href={`mailto:${contact.email}`} className="underline underline-offset-2">
+                  {contact.email}
+                </a>
+                .
+              </p>
+            )}
 
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                  <div>
-                    <label htmlFor="contact-name" className="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
-                      Name
-                    </label>
-                    <input
-                      id="contact-name"
-                      name="name"
-                      type="text"
-                      required
-                      value={formData.name}
-                      onChange={handleChange}
-                      placeholder="Your name"
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="contact-email-input" className="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
-                      Email
-                    </label>
-                    <input
-                      id="contact-email-input"
-                      name="email"
-                      type="email"
-                      required
-                      value={formData.email}
-                      onChange={handleChange}
-                      placeholder="your@email.com"
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all"
-                    />
-                  </div>
-                </div>
-
+            <form onSubmit={handleSubmit} className="space-y-7">
+              <div className="grid sm:grid-cols-2 gap-7">
                 <div>
-                  <label htmlFor="contact-subject" className="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
-                    Subject
-                  </label>
-                  <input
-                    id="contact-subject"
-                    name="subject"
-                    type="text"
-                    required
-                    value={formData.subject}
-                    onChange={handleChange}
-                    placeholder="What's this about?"
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all"
-                  />
+                  <label htmlFor="contact-name" className={labelClass}>Name</label>
+                  <input id="contact-name" name="name" type="text" required value={formData.name} onChange={handleChange} placeholder="Your name" className={fieldClass} />
                 </div>
-
                 <div>
-                  <label htmlFor="contact-message" className="block text-gray-400 text-xs font-bold uppercase tracking-wider mb-2">
-                    Message
-                  </label>
-                  <textarea
-                    id="contact-message"
-                    name="message"
-                    rows={5}
-                    required
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Tell me about the opportunity or project..."
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-teal-500 focus:ring-1 focus:ring-teal-500 transition-all resize-none"
-                  />
+                  <label htmlFor="contact-email-input" className={labelClass}>Email</label>
+                  <input id="contact-email-input" name="email" type="email" required value={formData.email} onChange={handleChange} placeholder="your@email.com" className={fieldClass} />
                 </div>
+              </div>
 
-                <button
-                  type="submit"
-                  id="contact-submit"
-                  className="w-full bg-teal-600 hover:bg-teal-500 text-white font-semibold py-4 rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/25 hover:shadow-teal-500/30 hover:-translate-y-0.5 active:translate-y-0 flex items-center justify-center gap-2"
-                >
-                  Send Message
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
-                </button>
-              </form>
-            </div>
+              <div>
+                <label htmlFor="contact-subject" className={labelClass}>Subject</label>
+                <input id="contact-subject" name="subject" type="text" required value={formData.subject} onChange={handleChange} placeholder="What's this about?" className={fieldClass} />
+              </div>
+
+              <div>
+                <label htmlFor="contact-message" className={labelClass}>Message</label>
+                <textarea id="contact-message" name="message" rows={4} required value={formData.message} onChange={handleChange} placeholder="Tell me about the opportunity or project..." className={`${fieldClass} resize-none`} />
+              </div>
+
+              <button type="submit" id="contact-submit" className="btn-light w-full">
+                Send Message
+                <ArrowRight />
+              </button>
+            </form>
           </div>
         </div>
       </div>

@@ -1,42 +1,36 @@
+import { Link } from 'react-router-dom';
+import content from '../data/content.json';
+
+const { profile, contact, footer } = content;
+
 export default function Footer() {
   return (
-    <footer className="bg-[#060E1F] border-t border-white/5 py-10">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col items-center gap-5">
-          {/* Logo */}
-          <div className="w-10 h-10 rounded-full bg-teal-600 flex items-center justify-center font-bold text-white text-sm shadow-lg shadow-teal-600/20">
-            CC
-          </div>
+    <footer className="bg-ink text-paper border-t border-paper/10">
+      <div className="page-width py-12 flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div>
+          <Link to="/" className="font-display text-3xl tracking-tight hover:text-clay-light transition-colors">
+            {profile.firstName} {profile.lastName}
+          </Link>
+          <p className="mt-2 text-sm text-paper/60">{footer.tagline}</p>
+        </div>
 
-          {/* Links */}
-          <div className="flex items-center gap-6">
+        <div className="md:text-right">
+          <div className="flex md:justify-end items-center gap-6 mb-3">
             <a
-              href="https://www.linkedin.com/in/chibuokem-chizterem"
+              href={contact.linkedinUrl}
               target="_blank"
               rel="noopener noreferrer"
               id="footer-linkedin"
-              className="text-gray-400 hover:text-teal-400 text-sm font-medium transition-colors"
+              className="text-sm font-medium hover:text-clay-light transition-colors"
             >
               LinkedIn
             </a>
-            <span className="w-1 h-1 rounded-full bg-gray-600" />
-            <a
-              href="mailto:ihuomachibuokem@gmail.com"
-              id="footer-email"
-              className="text-gray-400 hover:text-teal-400 text-sm font-medium transition-colors"
-            >
+            <a href={`mailto:${contact.email}`} id="footer-email" className="text-sm font-medium hover:text-clay-light transition-colors">
               Email
             </a>
           </div>
-
-          {/* Copyright */}
-          <p className="text-gray-500 text-sm">
-            © 2026 Chiziterem Chibuokem. All rights reserved.
-          </p>
-
-          {/* Tagline */}
-          <p className="text-teal-600/60 text-xs font-medium tracking-widest uppercase">
-            Built with clarity in mind.
+          <p className="text-sm text-paper/60">
+            © {new Date().getFullYear()} {profile.firstName} {profile.lastName}. All rights reserved.
           </p>
         </div>
       </div>

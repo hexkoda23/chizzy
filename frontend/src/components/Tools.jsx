@@ -1,92 +1,22 @@
-import React from 'react';
-import SupportingCaseStudy from './SupportingCaseStudy';
+import content from '../data/content.json';
+import { PageHeader } from './ui';
 
-const toolGroups = [
-  {
-    category: 'Content & Social',
-    icon: '✍️',
-    tools: [
-      { emoji: '📅', name: 'Content Calendar Tools' },
-      { emoji: '✍️', name: 'Google Docs' },
-      { emoji: '📱', name: 'Social Platforms' },
-    ],
-    accentColor: 'border-teal-500 bg-teal-50',
-    iconBg: 'bg-teal-100 text-teal-700',
-  },
-  {
-    category: 'Operations & Admin',
-    icon: '🗂️',
-    tools: [
-      { emoji: '📊', name: 'Google Sheets' },
-      { emoji: '📁', name: 'Google Drive' },
-      { emoji: '📄', name: 'Microsoft Word' },
-      { emoji: '📊', name: 'Excel' },
-      { emoji: '📊', name: 'PowerPoint' },
-    ],
-    accentColor: 'border-blue-500 bg-blue-50',
-    iconBg: 'bg-blue-100 text-blue-700',
-  },
-  {
-    category: 'Customer Support',
-    icon: '💬',
-    tools: [
-      { emoji: '💬', name: 'Zendesk (familiar)' },
-      { emoji: '💬', name: 'Intercom (familiar)' },
-    ],
-    accentColor: 'border-purple-500 bg-purple-50',
-    iconBg: 'bg-purple-100 text-purple-700',
-  },
-  {
-    category: 'Communication',
-    icon: '📧',
-    tools: [
-      { emoji: '📧', name: 'Gmail' },
-      { emoji: '🤝', name: 'Remote Collaboration Tools' },
-    ],
-    accentColor: 'border-orange-500 bg-orange-50',
-    iconBg: 'bg-orange-100 text-orange-700',
-  },
-];
+const { tools } = content;
 
 export default function Tools() {
   return (
-    <section id="tools" className="py-24 bg-[#FAFAF9]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Heading */}
-        <div className="text-center mb-16 animate-on-scroll">
-          <div className="inline-flex items-center gap-2 text-teal-600 text-xs font-bold uppercase tracking-widest mb-4">
-            <span className="w-6 h-px bg-teal-600" />
-            My Toolkit
-            <span className="w-6 h-px bg-teal-600" />
-          </div>
-          <h2 className="section-heading text-[#0F172A] mb-3">Tools & Platforms</h2>
-          <div className="w-16 h-1 bg-teal-600 rounded-full mx-auto mt-4" />
-        </div>
+    <section id="tools" className="pb-20 sm:pb-28">
+      <PageHeader eyebrow={tools.eyebrow} title={tools.heading} />
 
-        {/* Tool groups grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {toolGroups.map((group, i) => (
-            <div
-              key={i}
-              className={`animate-on-scroll animate-on-scroll-delay-${i + 1} bg-white rounded-2xl p-6 shadow-sm border-l-4 ${group.accentColor.split(' ')[0]} border border-gray-100 card-hover group`}
-            >
-              {/* Category header */}
-              <div className={`inline-flex items-center gap-2 ${group.iconBg} rounded-xl px-3 py-2 mb-5`}>
-                <span className="text-lg">{group.icon}</span>
-                <span className="font-bold text-xs uppercase tracking-wider">{group.category}</span>
-              </div>
-
-              {/* Tool list */}
-              <ul className="space-y-3">
+      <div className="page-width">
+        <div className="border-b border-ink/10">
+          {tools.groups.map((group, i) => (
+            <div key={i} className="grid md:grid-cols-12 gap-4 md:gap-8 py-9 border-t border-ink/10 animate-on-scroll">
+              <h2 className="md:col-span-4 font-display font-light text-2xl sm:text-3xl leading-tight">{group.category}</h2>
+              <ul className="md:col-span-8 flex flex-wrap gap-2.5">
                 {group.tools.map((tool, j) => (
-                  <li
-                    key={j}
-                    className="flex items-center gap-3 text-gray-600 text-sm hover:text-gray-900 transition-colors"
-                  >
-                    <span className="w-8 h-8 flex items-center justify-center bg-gray-50 rounded-lg text-base border border-gray-100 flex-shrink-0">
-                      {tool.emoji}
-                    </span>
-                    <span className="font-medium">{tool.name}</span>
+                  <li key={j} className="px-4 py-2.5 rounded-full bg-paper-deep text-sm font-medium">
+                    {tool}
                   </li>
                 ))}
               </ul>
@@ -94,10 +24,7 @@ export default function Tools() {
           ))}
         </div>
 
-        {/* Bottom note */}
-        <p className="text-center text-gray-400 text-sm mt-10 animate-on-scroll">
-          Always learning new tools — adaptability is part of the toolkit too. 🚀
-        </p>
+        <p className="mt-10 font-display italic text-xl text-ink-soft animate-on-scroll">{tools.note}</p>
       </div>
     </section>
   );

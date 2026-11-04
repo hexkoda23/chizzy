@@ -1,0 +1,344 @@
+{
+  "profile": {
+    "firstName": "Chiziterem",
+    "lastName": "Chibuokem",
+    "shortName": "Zizi",
+    "initials": "CC",
+    "role": "Content & Communication Strategist",
+    "eyebrow": "Communications & Operations",
+    "credentials": [
+      "Content & Digital Communications",
+      "Operations & Administrative Support",
+      "Industrial Physics B.Sc."
+    ],
+    "tagline": "Turning complex ideas into clear, compelling content — and making operations run smoother while doing it.",
+    "location": "Lagos, Nigeria",
+    "openToWork": true,
+    "openToWorkLabel": "Open to Work",
+    "heroPhoto": "/my-pics/photo1.jpg",
+    "aboutPhoto": "/my-pics/photo2.jpg",
+    "cvUrl": "/uploads/cv/adeleke-kehinde-cv-2-mw1wtorz.pdf"
+  },
+  "seo": {
+    "title": "Chiziterem Chibuokem | Communications & Operations Professional",
+    "description": "Chiziterem Chibuokem — Content & Digital Communications | Operations & Administrative Support | Industrial Physics B.Sc. Portfolio",
+    "shareDescription": "Turning complex ideas into clear, compelling content — and making operations run smoother while doing it.",
+    "keywords": "Chiziterem Chibuokem, digital communications, content strategy, operations, administrative support, Lagos Nigeria"
+  },
+  "home": {
+    "statement": "My approach is simple: clarity first, then impact.",
+    "statementBody": "I write across different styles and formats, from storytelling to structured content, always with a focus on meaning, relatability, and precision."
+  },
+  "about": {
+    "eyebrow": "Who I Am",
+    "heading": "About Me",
+    "paragraphs": [
+      "I’m a graduate of **Industrial Physics** with a strong foundation in structured thinking, problem-solving, and analysis.",
+      "Over time, I’ve transitioned these skills into content and communication, where I focus on making ideas clear, engaging, and easy to understand.",
+      "I’ve worked across **content planning, social media strategy, and customer communication**, where I’ve learned how to organize workflows, break down complex information, and present it in ways that connect with people. My approach is simple: clarity first, then impact.",
+      "I write across different styles and formats, from storytelling to structured content, always with a focus on meaning, relatability, and precision. I’m particularly interested in creating content that doesn’t just inform, but makes people pause, think, and feel.",
+      "Right now, I’m focused on building depth in **content strategy and communication**, refining how ideas are shaped, structured, and delivered for real impact."
+    ],
+    "stats": [
+      {
+        "value": "3+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "50+",
+        "label": "Projects Delivered"
+      },
+      {
+        "value": "✓",
+        "label": "Remote-First Ready"
+      },
+      {
+        "value": "B.Sc.",
+        "label": "Industrial Physics"
+      }
+    ]
+  },
+  "skills": {
+    "eyebrow": "What I Bring",
+    "heading": "Skills Overview",
+    "groups": [
+      {
+        "title": "Content & Communications",
+        "items": [
+          "Brand messaging & narrative alignment",
+          "Technical & creative copywriting",
+          "Content planning & strategy",
+          "Script writing & storytelling",
+          "Visual content direction",
+          "Research-backed messaging"
+        ]
+      },
+      {
+        "title": "Operations & Admin Support",
+        "items": [
+          "Task coordination & workflow management",
+          "Documentation & record keeping",
+          "Cross-departmental collaboration",
+          "Stakeholder communication",
+          "Strategic project support",
+          "Information management"
+        ]
+      },
+      {
+        "title": "Customer Support & Experience",
+        "items": [
+          "Customer communication & issue resolution",
+          "Client follow-ups & feedback documentation",
+          "User experience support",
+          "Engagement monitoring",
+          "Response consistency management"
+        ]
+      },
+      {
+        "title": "IT Tools & Systems",
+        "items": [
+          "Google Workspace (Docs, Sheets, Drive)",
+          "Microsoft Office (Word, Excel, PowerPoint)",
+          "Basic CRM familiarity (Zendesk / Intercom)",
+          "Social media scheduling tools",
+          "Content calendar management"
+        ]
+      }
+    ]
+  },
+  "caseStudies": {
+    "eyebrow": "Professional Experience",
+    "heading": "Case Studies",
+    "subheading": "Real work. Real impact.",
+    "items": [
+      {
+        "id": "social-media-performance-analysis",
+        "title": "Social Media Performance Analysis and Insight-Driven Recommendations",
+        "company": "Social Media Analysis Project",
+        "duration": "2024",
+        "tags": [
+          "Social Media",
+          "Data Analysis",
+          "Strategy"
+        ],
+        "overview": "This project focused on analyzing social media performance to identify gaps in engagement, content effectiveness, and audience response patterns.",
+        "problem": "The existing content lacked clear performance direction. While posts were being published, there was limited understanding of what was working, what wasn't, and why engagement levels varied.",
+        "approach": "I reviewed post performance across key metrics such as engagement, reach, and content type effectiveness. I looked for patterns in audience behavior, content structure, and messaging.",
+        "execution": [
+          "Analyzed high- and low-performing posts",
+          "Identified patterns in engagement and audience interaction",
+          "Evaluated content formats, captions, and timing",
+          "Developed clear insights based on observed trends",
+          "Provided recommendations for improving content direction"
+        ],
+        "outcome": "The analysis provided a clearer understanding of what drives engagement and highlighted areas for improvement, enabling more intentional and data-informed content decisions.",
+        "keyInsight": "Content performance improves when decisions are guided by patterns and audience behavior, not assumptions.",
+        "links": [
+          {
+            "label": "View Full Case Study",
+            "url": "https://docs.google.com/document/d/1q3ckGGcbOjtYnLDLGh-lEnfgP95k33rMtI-IJ8E_xo4/edit?usp=drivesdk"
+          }
+        ]
+      },
+      {
+        "id": "structured-content-planning",
+        "title": "Structured Content Planning for Consistency and Engagement",
+        "company": "Content Calendar Project",
+        "duration": "2024",
+        "tags": [
+          "Content Strategy",
+          "Planning",
+          "Social Media"
+        ],
+        "overview": "A content planning project designed to improve posting consistency and create a more intentional content flow.",
+        "problem": "The brand lacked a structured posting system, resulting in inconsistent content delivery and weak audience engagement.",
+        "approach": "I developed a content structure based on clear themes and posting frequency, ensuring each piece of content served a defined purpose.",
+        "execution": [
+          "Created a 4-week content calendar",
+          "Defined content pillars and themes",
+          "Structured post types (educational, engaging, promotional)",
+          "Aligned messaging with audience needs and brand tone"
+        ],
+        "outcome": "The calendar introduced consistency, improved content organization, and created a clearer direction for audience engagement.",
+        "keyInsight": "Consistency is not just about posting regularly, it's about having a clear and repeatable content structure.",
+        "links": [
+          {
+            "label": "View Full Case Study",
+            "url": "https://docs.google.com/document/d/1qHhe3ManKNpSNU4-fo6eUY5pKZCC0iypx6wn9WzTfQk/edit?usp=drivesdk"
+          }
+        ]
+      },
+      {
+        "id": "content-strategy-for-brand-growth",
+        "title": "Content Strategy Development and Execution for Brand Growth",
+        "company": "Content Strategy + Calendar Project",
+        "duration": "2024",
+        "tags": [
+          "Content Strategy",
+          "Brand Growth",
+          "Planning"
+        ],
+        "overview": "This project combined content strategy development with execution planning to create a cohesive and effective content system.",
+        "problem": "The brand had no defined content direction, making it difficult to maintain consistency, build identity, or connect meaningfully with its audience.",
+        "approach": "I built a 90day strategy rooted in audience understanding, brand positioning, and content purpose. The goal was to create awareness, clarity, structure, and direction.",
+        "execution": [
+          "Defined target audience and content goals",
+          "Developed content pillars aligned with brand messaging",
+          "Created a structured content calendar",
+          "Designed content themes and messaging direction",
+          "Ensured alignment between strategy and execution"
+        ],
+        "outcome": "The project provided a clear roadmap for content creation, improving consistency, brand voice, and overall communication effectiveness.",
+        "keyInsight": "Strong content is not created randomly,it is built on clear strategy, structure, and intention.",
+        "links": [
+          {
+            "label": "View Full Case Study",
+            "url": "https://docs.google.com/document/d/1PS6QjjDUZktP6Q0-UT8TMcXaeVB6ObPKdYzUbgwrCcw/edit?usp=drivesdk"
+          }
+        ]
+      },
+      {
+        "id": "campaign-concept-and-script-writing",
+        "title": "Campaign Concept Development and Script Writing",
+        "company": "Campaign Theme & Script Writing",
+        "duration": "2024",
+        "tags": [
+          "Campaign",
+          "Script Writing",
+          "Creative"
+        ],
+        "overview": "A campaign-focused project centered on developing a strong theme and crafting a script that communicates the message clearly and effectively.",
+        "problem": "There was a need for a cohesive campaign direction that could capture attention and communicate the intended message in a compelling way.",
+        "approach": "I focused on building a clear narrative, ensuring the message was both relatable and engaging while aligning with the campaign objective.",
+        "execution": [
+          "Developed campaign theme and core message",
+          "Structured the narrative flow of the script",
+          "Focused on clarity, tone, and emotional connection",
+          "Ensured alignment between message and audience"
+        ],
+        "outcome": "The final script delivered a clear and engaging message, providing a strong foundation for campaign execution.",
+        "keyInsight": "A strong campaign is built on clarity of message, when people understand it, they connect with it.",
+        "links": [
+          {
+            "label": "View Full Case Study",
+            "url": "https://docs.google.com/document/d/1rBGX7u7qJycJVFKn_I-rWxIUZJUvfuAebssO0-AWmsM/edit?usp=drivesdk"
+          },
+          {
+            "label": "Additional short script writing",
+            "url": "https://docs.google.com/document/d/1PNnDMwYLR2TfsLBWkhCxSDcxQWUP8p21/edit?usp=drivesdk&ouid=114589323661130766226&rtpof=true&sd=true"
+          }
+        ]
+      },
+      {
+        "id": "creative-writing-and-storytelling",
+        "title": "Creative Writing and Storytelling",
+        "company": "Writing Samples (Stories)",
+        "duration": "2024",
+        "tags": [
+          "Creative Writing",
+          "Storytelling",
+          "Content"
+        ],
+        "overview": "A collection of written pieces exploring storytelling through clear expression, emotional depth, and structured narrative flow.",
+        "problem": "The objective was to create stories that are relatable, thought-provoking, and emotionally engaging.",
+        "approach": "I focused on clarity of expression, pacing, and emotional honesty, ensuring each piece communicates its message effectively.",
+        "execution": [
+          "Developed story concepts and themes",
+          "Structured narratives for flow and readability",
+          "Focused on tone, voice, and emotional impact"
+        ],
+        "outcome": "The stories reflect a consistent writing style centered on clarity, relatability, and meaningful expression.",
+        "keyInsight": "Effective storytelling is not about complexity, it's about clarity and emotional truth.",
+        "links": [
+          {
+            "label": "View Full Case Study",
+            "url": "https://docs.google.com/document/d/1JDGJDYzl4UQBzzNWlq8HjVU3V-mqdneOtY0fnMusAnM/edit?usp=drivesdk"
+          },
+          {
+            "label": "View Project",
+            "url": "https://docs.google.com/document/d/1XDYa1t_9QARGW3iwV591NOnQNUIbLUue/edit?usp=drivesdk&ouid=114589323661130766226&rtpof=true&sd=true"
+          },
+          {
+            "label": "Writing samples",
+            "url": "https://docs.google.com/document/d/1w4zgQt5fVbr0hDDb4OEsG4a9IiDg_yItTXigagdVRhc/edit?usp=drivesdk"
+          }
+        ]
+      }
+    ]
+  },
+  "supporting": {
+    "eyebrow": "Additional Work",
+    "heading": "Supporting Case Study",
+    "subheading": "Operations & Communication Coordination",
+    "company": "Institutional & Client Projects",
+    "duration": "2022 – 2026",
+    "tags": [
+      "Operations",
+      "Coordination",
+      "Communication"
+    ],
+    "overview": "Contributed to coordination and communication systems that supported internal teams and external stakeholders, improving workflow clarity, alignment, and execution efficiency.",
+    "contributions": [
+      "Supported cross-departmental coordination under senior leadership",
+      "Facilitated joint initiatives that enhanced alignment between teams",
+      "Maintained structured documentation systems for workflow continuity",
+      "Managed remote client communication and proposal tracking"
+    ],
+    "keyInsight": "Operational efficiency improves significantly when communication, documentation, and coordination are structured, not left informal or reactive.",
+    "screenshots": [
+      "/4case/8d732395-2f3e-4797-86b5-3270d51a33fc.jpeg",
+      "/4case/91a8ea59-2e16-4e68-9d2a-8e3e486817f8.jpeg"
+    ]
+  },
+  "tools": {
+    "eyebrow": "My Toolkit",
+    "heading": "Tools & Platforms",
+    "note": "Always learning new tools — adaptability is part of the toolkit too.",
+    "groups": [
+      {
+        "category": "Content & Social",
+        "tools": [
+          "Content Calendar Tools",
+          "Google Docs",
+          "Social Platforms"
+        ]
+      },
+      {
+        "category": "Operations & Admin",
+        "tools": [
+          "Google Sheets",
+          "Google Drive",
+          "Microsoft Word",
+          "Excel",
+          "PowerPoint"
+        ]
+      },
+      {
+        "category": "Customer Support",
+        "tools": [
+          "Zendesk (familiar)",
+          "Intercom (familiar)"
+        ]
+      },
+      {
+        "category": "Communication",
+        "tools": [
+          "Gmail",
+          "Remote Collaboration Tools"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Get In Touch",
+    "heading": "Let's Work Together",
+    "subheading": "Open to content, communications, and operations roles — remote or Lagos-based.",
+    "email": "ihuomachibuokem@gmail.com",
+    "phone": "+234 9067948713",
+    "linkedinUrl": "https://www.linkedin.com/in/chibuokem-chizterem",
+    "linkedinLabel": "chibuokem-chizterem"
+  },
+  "footer": {
+    "tagline": "Built with clarity in mind."
+  }
+}
