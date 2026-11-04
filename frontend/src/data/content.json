@@ -122,39 +122,50 @@
           "Data Analysis",
           "Tracking "
         ],
-        "overview": "",
-        "problem": "",
-        "approach": "",
-        "execution": [],
-        "outcome": "",
+        "overview": " Social Media Operations & Team Coordination Tracker",
+        "problem": "Managing multiple social media platforms and content calendars requires coordination between team members, consistent scheduling, task ownership and monitoring of deliverables. Without a central tracking system, tasks and deadlines can become difficult to monitor.",
+        "approach": "To create a centralised system for planning content, assigning responsibilities, monitoring publishing schedules and tracking the progress of social media activities across platforms.\nTools:\nGoogle Sheets or Microsoft Excel.\nGoogle Docs.\nGoogle Calendar (optional).\nClick up",
+        "execution": [
+          "Build a spreadsheet with:Assigned team member. Content deadline.",
+          "Approval status, Drop downs and filters and conditional formatting ",
+          "Remarks and outstanding actions. ",
+          "A graph for daily performance of each platform being handled."
+        ],
+        "outcome": "A centralised content operations system that improves task visibility, accountability, scheduling and coordination across  each teammate handling each social media activities.",
         "keyInsight": "",
-        "links": []
+        "links": [
+          {
+            "label": "View Full Case Study",
+            "url": "https://docs.google.com/spreadsheets/d/1hz4XRq16UFlQEvX1HROZB01VqsMUG5xJQ0Spj6z1ASE/edit?usp=drivesdk"
+          }
+        ]
       },
       {
         "id": "structured-content-planning",
         "title": "Social Media Performance Reporting Dashboard",
-        "company": "Content Calendar Project and monthly PerformancePerformance tracker",
+        "company": "Project and monthly PerformancePerformance tracker",
         "duration": "2026",
         "tags": [
           "Monthly reporting",
           "Data",
           "Social Media"
         ],
-        "overview": "A content planning project designed to improve posting consistency and create a more intentional content flow.",
-        "problem": "The brand lacked a structured posting system, resulting in inconsistent content delivery and weak audience engagement.",
-        "approach": "I developed a content structure based on clear themes and posting frequency, ensuring each piece of content served a defined purpose.",
+        "overview": "Performance Monitoring & Reporting Dashboard",
+        "problem": "Social media activities generate performance data across multiple platforms. Without structured reporting, it becomes difficult to evaluate performance, identify trends and make informed recommendations.\nAt the end of the month, we can't see if there was a Growth or decline",
+        "approach": "To organise platform performance data into a reporting system that supports monthly monitoring, performance evaluation and decision-making.\nI developed a monthly reporting system, that'd help us know if we're working on line or against our monthly targets \nTools:\nMeta Business Suite.\nMicrosoft Excel or Google Sheets.\nMicrosoft PowerPoint (for presentation, it's optional).",
         "execution": [
-          "",
-          "",
-          "",
-          ""
+          "Build a reporting workbook containing: Platform. Reporting period.",
+          "Followers at the beginning and end of the period.",
+          "Reach/views. Engagements. New followers.",
+          "Content published. Engagement rate (where the required data is available).",
+          "Performance observations. Recommendations."
         ],
-        "outcome": "",
+        "outcome": "The outcome resulted in a  structured reporting tool that makes social media performance easier to interpret, highlights areas requiring attention and supports more informed content decisions.",
         "keyInsight": "",
         "links": [
           {
             "label": "View Full Case Study",
-            "url": "https://docs.google.com/document/d/1qHhe3ManKNpSNU4-fo6eUY5pKZCC0iypx6wn9WzTfQk/edit?usp=drivesdk"
+            "url": "https://docs.google.com/spreadsheets/d/14Dau59_K5EhJYxtyfmRw5MVjT4sWdZMrUVQ1XlB4EDo/edit?usp=drivesdk"
           }
         ]
       },
@@ -190,7 +201,7 @@
       {
         "id": "campaign-concept-and-script-writing",
         "title": "Customer Experience & Client Coordination",
-        "company": "Client records, communication history and follow-up management",
+        "company": "B2B Prospect Research & Account Development Tracker",
         "duration": "2026",
         "tags": [
           "Follow ups",
@@ -198,30 +209,23 @@
           "Communication history "
         ],
         "overview": "",
-        "problem": "",
-        "approach": "",
-        "execution": [],
-        "outcome": "",
-        "keyInsight": "",
-        "links": []
-      },
-      {
-        "id": "creative-writing-and-storytelling",
-        "title": "B2B Prospect Research & Account Management Tracker",
-        "company": "B2B Prospect &Account Management Tracker",
-        "duration": "2026",
-        "tags": [
-          "opportunity tracking",
-          "account mapping ",
-          "Research"
+        "problem": "Identifying potential business customers is only the beginning of business development. Organisations also need a structured way to understand prospective accounts, assess potential needs, organise engagement activities and monitor opportunities.",
+        "approach": "To develop a prospect management system that supports business research, account mapping, prospect prioritisation and opportunity tracking.\nTools:\nMicrosoft Excel or Google Sheets.\nGoogle Maps (for location research).\nMicrosoft Word (for account research briefs and proposals ).",
+        "execution": [
+          "Build a tracker containing: Business name. Industry/category. Business location.",
+          "Potential product/service requirements. Relevant contact person.",
+          "Estimated opportunity (only where evidence supports an estimate).",
+          "Prospect priority. Last engagement. Current opportunity stage. Next action.",
+          "Include a simple territory overview and a summary of account engagement."
         ],
-        "overview": "",
-        "problem": "",
-        "approach": "",
-        "execution": [],
-        "outcome": "",
+        "outcome": "A prospect intelligence and account management tool that helps organise market information, prioritise engagement and support more informed business development decisions.",
         "keyInsight": "",
-        "links": []
+        "links": [
+          {
+            "label": "View Full Case Study",
+            "url": "https://docs.google.com/spreadsheets/d/1qm5ZCg_PPWED-D5piqtp3AvkI6CtMMxYvk3qnxGaRjQ/edit?usp=drivesdk"
+          }
+        ]
       }
     ]
   },
