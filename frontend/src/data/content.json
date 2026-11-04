@@ -64,17 +64,6 @@
     "heading": "Skills Overview",
     "groups": [
       {
-        "title": "Content & Communications",
-        "items": [
-          "Brand messaging & narrative alignment",
-          "Technical & creative copywriting",
-          "Content planning & strategy",
-          "Script writing & storytelling",
-          "Visual content direction",
-          "Research-backed messaging"
-        ]
-      },
-      {
         "title": "Operations & Admin Support",
         "items": [
           "Task coordination & workflow management",
@@ -104,6 +93,17 @@
           "Social media scheduling tools(metabusiness suite/metricool)",
           "Content calendar management"
         ]
+      },
+      {
+        "title": "Content & Communications",
+        "items": [
+          "Brand messaging & narrative alignment",
+          "Technical & creative copywriting",
+          "Content planning & strategy",
+          "Script writing & storytelling",
+          "Visual content direction",
+          "Research-backed messaging"
+        ]
       }
     ]
   },
@@ -116,7 +116,7 @@
         "id": "social-media-performance-analysis",
         "title": "Operations & Reporting",
         "company": "Social Media Operations & Team Coordination Tracker",
-        "duration": "2024-2025",
+        "duration": "2024-2026",
         "tags": [
           "Social Media",
           "Data Analysis",
